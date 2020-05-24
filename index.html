@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>erics blog</title>
     <meta name="description" content="welcome to the internet archive and public diary of eric flatt">
     <meta name="keywords" content="eric flatt, erics, blog, erics blog, ux design, design, scad">
@@ -50,12 +51,15 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+    <img id="image" src="./img/bread.png"/>
     <label onclick="goAway()" id="mode">
         can i interest you in dark mode? <input type="checkbox" id="toggle">
       </label>
-    <main class="wrapper">
+    <main class="wrapper home">
         <h1>welcome to my blog</h1>
-        <h2>the internet archive and public diary of eric flatt</h2>
+        <h2>the internet archive and public diary of <a onmouseout="meInvisible()" onmouseover="me()" href="about.html"> eric flatt</a>
+            <img id="me" style="width:10%;" src="./img/me.JPG" alt="me">
+        </h2>
         <h3>click below to read</h3>
         <h2>&#8595;</h2> 
         <ul>
