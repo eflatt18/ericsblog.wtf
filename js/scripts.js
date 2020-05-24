@@ -8,3 +8,7 @@ toggle.addEventListener('change', e => {
 		html.classList.remove('darkmode');
 	}
 });
+
+function goAway() {
+    document.getElementById("mode").style.display = "none";
+  }
