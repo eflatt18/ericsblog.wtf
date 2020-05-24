@@ -5,6 +5,11 @@
   background: #ffdae0; 
 }
 
+nav{
+  display: flex;
+  align-items: center;
+}
+
  h1{
   font-size: 68px;
   line-height: 1.05;
@@ -67,3 +72,23 @@ a:visited{
 .alfred p{
   font-size: 16px;
 }
+
+/* dark mode */
+#mode {
+  display: block;
+  text-align: right;
+  font-size: smaller;
+  font-style: italic;
+  margin-left: auto;
+}
+
+.darkmode {
+  background-color: #15202b;
+  color: #ccc;
+  border-color: dodgerblue;
+}
+
+.darkmode a {
+  color: dodgerblue;
+}
+
