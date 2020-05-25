@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>erics blog</title>
     <meta name="description" content="welcome to the internet archive and public diary of eric flatt">
@@ -52,9 +53,11 @@
 </head>
 <body>
     <img id="image" src="/img/bread.png"/>
-    <label onclick="goAway()" id="mode">
-        can i interest you in dark mode? <input type="checkbox" id="toggle">
-      </label>
+    <div class="dark-toggle">
+        <label onclick="goAway()" id="mode">
+            can i interest you in dark mode? <input type="checkbox" id="toggle">
+          </label>
+    </div>
     <main class="wrapper home">
         <h1>welcome to my blog</h1>
         <h2>the internet archive and public diary of <a onmouseout="meInvisible()" onmouseover="me()" href="about.html"> eric flatt</a>
@@ -62,27 +65,35 @@
         </h2>
         <h3>click below to read</h3>
         <h2>&#8595;</h2> 
-        <ul>
-            <li>
-                <a href="articles/spotify.html">spotify collaborative listening party</a>
-            </li>
-            <li>
-                <a href="articles/alfred.html">
-                    i bought a bonsai tree to water it on twitter
-                </a>
-            </li>
-        </ul>
+        <div>
+            <ul>
+                <li>
+                    <a href="articles/spotify.html">spotify collaborative listening party</a>
+                </li>
+                <li>
+                    <a href="articles/alfred.html">
+                        i bought a bonsai tree to water it on twitter
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="email-form"></div>
+            <h3>sign up for my newsletter</h3>
+            <form action="https://send.pageclip.co/3Oei8AvRkZTY3ge53W6DOQJg26TluBK8/newsletter" class="pageclip-form" method="post">
+                <input type="email" name="email" type="text" placeholder="email" required />
+              
+                <button type="submit" class="pageclip-form__submit">
+                  <span>Sign up</span>
+                </button>
+              </form>
+        </div>
     </main>
 
 
-
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
-
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {

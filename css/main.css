@@ -98,6 +98,10 @@ p{
   font-size: 16px;
 }
 
+.dark-toggle{
+  display: flex;
+}
+
 .alfred{
   margin-top: 100px;
 }
@@ -125,6 +129,10 @@ p{
   #image{
     display: none;
   }
+}
+
+.email-form {
+  margin-top: 50px;
 }
 
 /* dark mode */
