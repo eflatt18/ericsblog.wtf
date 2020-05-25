@@ -94,13 +94,30 @@ a:visited{
     margin: 0 auto;
 }
 
+@media only screen and (max-width:800px){
+  .wrapper{
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+.home{
+  margin-top: 100px;
+}
+
 p{
   font-size: 16px;
 }
 
-.dark-toggle{
-  display: flex;
+#text{
+  pointer-events: none;
 }
+
+#darkmodeText{
+  font-size: 12px;
+}
+
 
 .alfred{
   margin-top: 100px;
@@ -135,13 +152,19 @@ p{
   margin-top: 50px;
 }
 
+#email{
+  border: 1px solid lightgrey;
+}
+
 /* dark mode */
 #mode {
-  display: block;
   text-align: right;
   font-size: smaller;
   font-style: italic;
   margin-left: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .darkmode {
@@ -152,5 +175,14 @@ p{
 
 .darkmode a {
   color: dodgerblue;
+}
+
+.lightmode{
+  background-color: white;
+  color: black;
+}
+
+.lightmode a{
+  color: #0000ee;
 }
 

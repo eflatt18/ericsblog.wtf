@@ -9,8 +9,23 @@ toggle.addEventListener('change', e => {
 	}
 });
 
+// toggle between light and dark mode
+$(document).ready(function () {
+  $("#toggle").click(function () {
+          $("#text").text(($("#text").text() == 'dark mode?') ? 'light mode?' : 'dark mode?');
+  })
+});
+
+function light() {
+  document.getElementById("light").style.display = "block";
+}
+
 function goAway() {
     document.getElementById("mode").style.display = "none";
+  }
+
+  function goAway() {
+    document.getElementById("lightmode").style.display = "none";
   }
 
 function me() {

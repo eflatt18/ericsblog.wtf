@@ -53,11 +53,14 @@
 </head>
 <body>
     <img id="image" src="/img/bread.png"/>
-    <div class="dark-toggle">
-        <label onclick="goAway()" id="mode">
-            can i interest you in dark mode? <input type="checkbox" id="toggle">
+    
+        <label  onclick="goAway()"  id="mode">
+            <span id="text">dark mode?</span>  <input  type="checkbox" id="toggle">
           </label>
-    </div>
+          <!-- <label  onclick="goAway()" id="lightmode">
+            light mode? <input type="checkbox" id="light">
+         </label> -->
+
     <main class="wrapper home">
         <h1>welcome to my blog</h1>
         <h2>the internet archive and public diary of <a onmouseout="meInvisible()" onmouseover="me()" href="about.html"> eric flatt</a>
@@ -80,7 +83,7 @@
         <div class="email-form"></div>
             <h3>sign up for my newsletter</h3>
             <form action="https://send.pageclip.co/3Oei8AvRkZTY3ge53W6DOQJg26TluBK8/newsletter" class="pageclip-form" method="post">
-                <input type="email" name="email" type="text" placeholder="email" required />
+                <input id="email" type="email" name="email" type="text" placeholder="email" required />
               
                 <button type="submit" class="pageclip-form__submit">
                   <span>Sign up</span>
