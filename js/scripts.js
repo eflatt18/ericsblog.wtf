@@ -47,3 +47,12 @@ function meInvisibleTwo() {
   $(document).mousemove(function(e){
     $("#image").css({left:e.pageX, top:e.pageY});
 });
+
+//draggable elements
+$( function() {
+  $( "#draggable" ).draggable();
+} );
+
+$( function() {
+  $( ".draggable" ).draggable();
+} );

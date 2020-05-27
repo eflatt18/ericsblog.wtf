@@ -140,6 +140,7 @@ p{
   position:absolute;
   margin-left: 15px;
   width: 5%;
+  z-index: 999;
 }
 
 @media only screen and (max-width:800px){
@@ -185,4 +186,3 @@ p{
 .lightmode a{
   color: #0000ee;
 }
-

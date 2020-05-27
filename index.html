@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>erics blog</title>
     <meta name="description" content="welcome to the internet archive and public diary of eric flatt">
     <meta name="keywords" content="eric flatt, erics, blog, erics blog, ux design, design, scad">
@@ -53,7 +54,7 @@
 </head>
 <body>
     <img id="image" src="/img/bread.png"/>
-     
+
         <label  onclick="goAway()"  id="mode">
             <span id="text">dark mode?</span>  <input  type="checkbox" id="toggle">
           </label>
@@ -67,10 +68,10 @@
         <h2>&#8595;</h2> 
         <div>
             <ul>
-                <li>
+                <li class="draggable">
                     <a href="articles/spotify.html">spotify collaborative listening party</a>
                 </li>
-                <li>
+                <li class="draggable">
                     <a href="articles/alfred.html">
                         i bought a bonsai tree to water it on twitter
                     </a>
@@ -110,6 +111,7 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 <script src="/js/scripts.js"></script>
 </body>
 </html>
