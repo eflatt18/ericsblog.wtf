@@ -44,6 +44,7 @@ function meInvisibleTwo() {
     document.getElementById("meTwo").style.display = "none";
   }  
 
+  //cursor image
   $(document).mousemove(function(e){
     $("#image").css({left:e.pageX, top:e.pageY});
 });
