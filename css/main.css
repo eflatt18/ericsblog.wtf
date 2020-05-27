@@ -35,6 +35,12 @@ nav{
   align-items: center;
 }
 
+li{
+  cursor: all-scroll;
+  float: left;
+  clear: both;
+}
+
  h1{
   font-size: 68px;
   line-height: 1.05;
@@ -151,6 +157,7 @@ p{
 
 .email-form {
   margin-top: 50px;
+  display: inline-block;
 }
 
 #email{
