@@ -53,6 +53,11 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+    <audio style="display: none;" controls autoplay>
+        <source src="audio/gong.ogg" type="audio/ogg">
+        <source src="audio/gong.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
     <img id="image" src="/img/bread.png"/>
 
         <label  onclick="goAway()"  id="mode">
@@ -88,7 +93,8 @@
                 </button>
               </form>
         </div>
-    </main>
+    </main>   
+
 
 
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
@@ -113,5 +119,6 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 <script src="/js/scripts.js"></script>
+<script src="/js/scroll.js"></script>
 </body>
 </html>
