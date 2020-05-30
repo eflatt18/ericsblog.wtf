@@ -57,3 +57,7 @@ $( function() {
 $( function() {
   $( ".draggable" ).draggable();
 } );
+
+$(document).ready(function() {
+  $("#gong").get(0).play();
+})
