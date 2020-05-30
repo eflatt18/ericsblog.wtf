@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jvfloat.css">
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/jvfloat.js"></script>
+  
+
     <title>erics blog</title>
     <meta name="description" content="welcome to the internet archive and public diary of eric flatt">
     <meta name="keywords" content="eric flatt, erics, blog, erics blog, ux design, design, scad">
@@ -80,15 +84,17 @@
         <div class="email-form"></div>
             <h3>sign up for my newsletter</h3>
             <form action="https://send.pageclip.co/3Oei8AvRkZTY3ge53W6DOQJg26TluBK8/newsletter" class="pageclip-form" method="post">
-                <input id="email" type="email" name="email" type="text" placeholder="email" required />
-              
+                <input class="textBox" id="email" type="email" name="email" type="text" placeholder="email" required />
                 <button type="submit" class="pageclip-form__submit">
                   <span>Sign up</span>
-                </button>
+                </button> 
               </form>
         </div>
     </main>   
 
+    <script>
+        $('input, textarea').jvFloat();
+    </script>
 
 
 <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
@@ -113,6 +119,5 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 <script src="/js/scripts.js"></script>
-<script src="/js/scroll.js"></script>
 </body>
 </html>
