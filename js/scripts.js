@@ -62,3 +62,38 @@ $( function() {
   $( ".draggable" ).draggable();
 } );
 
+
+// idle user do something
+
+// idleTimer = null;
+// idleState = false;
+// idleWait = 2000;
+
+// (function ($) {
+
+//     $(document).ready(function () {
+    
+//         $('*').bind('mousemove keydown scroll', function () {
+        
+//             clearTimeout(idleTimer);
+                    
+//             if (idleState == true) { 
+                
+//                 // Reactivated event
+//                 $("body").show();           
+//             }
+            
+//             idleState = false;
+            
+//             idleTimer = setTimeout(function () { 
+                
+//                 // Idle Event
+//                 $("body").hide();
+
+//                 idleState = true; }, idleWait);
+//         });
+        
+//         $("body").trigger("mousemove");
+    
+//     });
+// }) (jQuery)

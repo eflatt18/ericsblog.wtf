@@ -247,3 +247,26 @@ p{
 .four {
   background-color: #E84B30;
 }
+
+.Slider {
+  width: 100vw;
+  height: 500px;
+}
+
+.Slide {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 400px;
+  height: 400px;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+
+
+.Slide:nth-child(0n+2) { background: #FFA000; }
+.Slide:nth-child(0n+3) { background: #FFD54F; }
+.Slide:nth-child(0n+4) { background: #4CAF50; }
+.Slide:nth-child(0n+5) { background: #2196F3; }
+.Slide:nth-child(0n+6) { background: #4A148C; }
